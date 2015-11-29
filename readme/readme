@@ -1,0 +1,21 @@
+This program collects data from active network equipment.
+In this embodiment, since there is no active network equipment data included in the script data.sql
+The structure of the database is stored in a file table.sql
+Setting connection to the database stored in a file org.ua.getmac.konfig.DataConfig
+Implemented org.ua.getmac.shell package to connect to various devices via telnet and ssh protocols
+10.10.10.0.csv
+For the test in the catalog db script file is located 10.10.10.0.csv DHCP to download the database.
+
+The program has four pages separated by access rights
+"Adjusting device" ROLE_ADMIN
+"Page maktablitsy" for all authorized
+"Loading DHCP" for ROLE_ADMIN or ROLE_OPERATOR
+"Collecting data from devices" for ROLE_ADMIN
+The database already has two accounts
+login:user pass:1
+login:admin pass:1
+login:operator pass:1
+
+On the "Data collection devices" technology is used WEBSocket
+
+
