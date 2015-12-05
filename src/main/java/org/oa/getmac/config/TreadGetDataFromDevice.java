@@ -17,7 +17,7 @@ public class TreadGetDataFromDevice extends Thread {
 		this.devices = devices;
 	}
 
-	private void send(String s) {
+	public void send(String s) {
 
 		if ((webSocketSession != null) || webSocketSession.isOpen()) {
 			try {
@@ -36,7 +36,7 @@ public class TreadGetDataFromDevice extends Thread {
 		this.pause = false;
 	}
 
-	private void pauseTread() {
+	public void pauseTread() {
 
 		while (pause) {
 			yield();

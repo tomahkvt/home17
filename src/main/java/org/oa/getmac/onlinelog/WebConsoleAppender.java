@@ -12,11 +12,11 @@ import org.springframework.web.socket.TextMessage;
 
 public class WebConsoleAppender extends AppenderSkeleton {
 	@Autowired
-	ControlGetData controlGetData;
+	private ControlGetData controlGetData;
 	private static Logger log = Logger.getLogger(WebConsoleAppender.class);
 
 	@Override
-	protected void append(LoggingEvent event) {
+	public void append(LoggingEvent event) {
 
 		if (this.layout == null) {
 			errorHandler.error("No layout for appender " + name, null, ErrorCode.MISSING_LAYOUT);

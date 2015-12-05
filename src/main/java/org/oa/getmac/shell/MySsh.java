@@ -24,11 +24,11 @@ public class MySsh {
 	private static final int TIMEOUT_EXECUTE = 5000;//5000 ms
 	public static Logger log = Logger.getLogger(MySsh.class.getName());
 	
-	String convertToHP(String s1){
+	public String convertToHP(String s1){
 		return  s1.getBytes(Charset.forName("ISO-8859-1"))+"";
 	}
 	
-	String convertFromHP(String s1){
+	public String convertFromHP(String s1){
 		String s2 = s1.replaceAll("\u001b\\[24;1H","\n"); //Esc[Line;ColumnH
 		s2 = s2.replaceAll("\\[24;1H","\n"); //Esc[Line;ColumnH
 		s2 = s2.replaceAll("\u001b\\[\\d{1,2};\\d{1,2}H",""); //Esc[Line;ColumnH

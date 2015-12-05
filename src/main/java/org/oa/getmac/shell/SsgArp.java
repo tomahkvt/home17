@@ -6,14 +6,14 @@ public class SsgArp {
 	private static Logger log = Logger.getLogger(SsgArp.class);
 	private MySsh ssh = null;
 
-	void CiscoCatalystMac() {
+	public void CiscoCatalystMac() {
 	}
 
-	void setssh(MySsh ssh) {
+	public void setssh(MySsh ssh) {
 		this.ssh = ssh;
 	}
 
-	int telnet(String ipAddr, String userName, String userPassword)
+	public int telnet(String ipAddr, String userName, String userPassword)
 			throws CommandTimeOut {
 		try {
 			ssh.execute("telnet " + ipAddr + "\n", "login:");
@@ -35,12 +35,12 @@ public class SsgArp {
 		return 0;
 	}
 
-	String GetArpTableToTable() throws CommandTimeOut {
+	public String GetArpTableToTable() throws CommandTimeOut {
 		return ssh.execute("get arp\n", ">");
 
 	}
 
-	void exit() throws CommandTimeOut {
+	public void exit() throws CommandTimeOut {
 		ssh.execute("exit\n", "~$");
 	}
 

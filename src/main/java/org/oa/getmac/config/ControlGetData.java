@@ -28,7 +28,7 @@ public class ControlGetData {
 
 	}
 
-	void send(String s) {
+	public void send(String s) {
 		try {
 			session.sendMessage(new TextMessage(s));
 		} catch (IOException e) {

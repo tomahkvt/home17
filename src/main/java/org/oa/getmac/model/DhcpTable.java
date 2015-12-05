@@ -200,45 +200,4 @@ public class DhcpTable {
 		return true;
 	}
 
-	/*
-	 * @Override public int hashCode() { final int prime = 31; int result = 1;
-	 * result = prime * result + ((description == null) ? 0 :
-	 * description.hashCode()); result = prime * result + ((duration == null) ?
-	 * 0 : duration.hashCode()); result = prime * result + ((hostIP == null) ? 0
-	 * : hostIP.hashCode()); result = prime * result + ((hostMac == null) ? 0 :
-	 * hostMac.hashCode()); result = prime * result + ((hostName == null) ? 0 :
-	 * hostName.hashCode()); result = prime * result + ((ipType == null) ? 0 :
-	 * ipType.hashCode()); result = prime * result + ((politics == null) ? 0 :
-	 * politics.hashCode()); result = prime * result + ((profile == null) ? 0 :
-	 * profile.hashCode()); result = prime * result + ((securityAccess == null)
-	 * ? 0 : securityAccess.hashCode()); result = prime * result + ((termination
-	 * == null) ? 0 : termination.hashCode()); return result; }
-	 * 
-	 * 
-	 * @Override public boolean equals(Object obj) { if (this == obj) return
-	 * true; if (obj == null) return false; if (getClass() != obj.getClass())
-	 * return false; DhcpTable other = (DhcpTable) obj; if (description == null)
-	 * { if (other.description != null) return false; } else if
-	 * (!description.equals(other.description)) return false; if (duration ==
-	 * null) { if (other.duration != null) return false; } else if
-	 * (!duration.equals(other.duration)) return false; if (hostIP == null) { if
-	 * (other.hostIP != null) return false; } else if
-	 * (!hostIP.equals(other.hostIP)) return false; if (hostMac == null) { if
-	 * (other.hostMac != null) return false; } else if
-	 * (!hostMac.equals(other.hostMac)) return false; if (hostName == null) { if
-	 * (other.hostName != null) return false; } else if
-	 * (!hostName.equals(other.hostName)) return false; if (ipType == null) { if
-	 * (other.ipType != null) return false; } else if
-	 * (!ipType.equals(other.ipType)) return false; if (politics == null) { if
-	 * (other.politics != null) return false; } else if
-	 * (!politics.equals(other.politics)) return false; if (profile == null) {
-	 * if (other.profile != null) return false; } else if
-	 * (!profile.equals(other.profile)) return false; if (securityAccess ==
-	 * null) { if (other.securityAccess != null) return false; } else if
-	 * (!securityAccess.equals(other.securityAccess)) return false; if
-	 * (termination == null) { if (other.termination != null) return false; }
-	 * else if (!termination.equals(other.termination)) return false; return
-	 * true; }
-	 */
-
 }

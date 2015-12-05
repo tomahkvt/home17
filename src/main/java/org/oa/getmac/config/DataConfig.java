@@ -35,7 +35,7 @@ public class DataConfig {
 		return dataSource;
 	}
 
-	Properties hibernateProperties() {
+	public Properties hibernateProperties() {
 		return new Properties() {
 			{
 
